@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 50px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ccc;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .cell.X {
+    color: #5e5e5e;
+  }
+  
+  .cell.O {
+    color: #bd4646;
+  }
+  
+  .cell.winner {
+    background-color: #4cd964;
+    color: #fff;
+  }
+  
+  .message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .new-game-btn {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .new-game-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
